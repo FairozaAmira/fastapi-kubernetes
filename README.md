@@ -18,7 +18,12 @@ Navigate to http://localhost:8080/fastapi to test the API.
 ## HowTo dockerize it
 
 1. [Install](https://www.docker.com/get-started) docker.
-2. Go to the directory where Dockerfile is
+2. Go to the directory where Dockerfile is,
+Or run the following
+```
+chmod +x run_docker.sh
+./run_docker.sh
+```
 3. `docker build -t fastapi_kubernetes:1.0 .` (don't forget the dot)
 4. docker run --name fastapi_kubernetes -d -p 8001:8001 fastapi_kubernetes:1.0
 
